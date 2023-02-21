@@ -1,0 +1,168 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+.main{
+    display: flex;
+    flex-flow: column nowrap;
+
+
+}
+
+.header{
+    background: url(images/header.jpg);
+    background-position: center;
+    background-attachment: contain;
+    background-size: cover;
+    justify-content:space-between;
+    display: flex;
+    flex-flow: column nowrap;
+    height: 400px;
+   
+
+    
+}
+    .menu{
+        background: rgba(255, 255, 255,.1);
+        display: flex;
+        flex-flow: row nowrap;
+        height: 100%;
+        
+    }
+    .logo{
+        
+        flex: 1 1 auto;        
+        
+        
+        }
+        .logo img{
+
+            width: 25%;
+            position: relative;
+            top: 5px;
+            
+        }    
+        
+        
+    .nav{
+        
+        flex: 5 1 auto;
+        
+        
+    }
+    .nav a{
+        color: rgb(167, 129, 129);
+        
+        
+                
+    }
+        .nav a:hover{
+            color: #7385eb;
+        }
+    .social{
+        
+        flex: 1 1 auto;
+        display: flex;
+        
+    }
+        .social a{
+            color: rgb(167, 129, 129);
+        }
+        .social a:hover{
+            color: #7385eb;
+        }
+.main-texto{
+    background-color: rgb(0, 0, 1, .1);
+    height: 55%;
+    position: relative; 
+    width: 90%;
+    left: 5%;
+    right: 5%;
+    top: 0%;
+
+}
+ h1{
+        
+        font-family: 'Lora', sans-serif;        
+        font-size: 25px;
+        text-align: center;
+        color: rgba(255, 166, 0, 0.742);
+           
+    }
+.section{
+    background: #000;
+    display: flex;
+}
+    .articulos{
+        background-color: rgb(186, 112, 178);
+        flex: 2 1 auto;
+        display: flex;
+        flex-flow: row wrap;
+        width: 700px;
+        
+    }
+    .article{
+        background: yellowgreen;
+        flex: 1 1 35%;
+        margin: 10px 10px 0 0px;
+        }
+        .fecha{
+
+            padding: 10px;
+            margin-top: -40px;
+            color: yellow;
+        }
+
+        h3{
+            padding: 5px;
+            background-color: #d9534f;
+            color: white;
+
+        }
+
+        .article img{
+            width: 100%;
+        }
+    .navegacion{
+        background-color: rgb(164, 96, 13);
+        flex: 1 1 100%;
+    }
+    .aside{
+        background-color: azure;
+        width: 20%;
+          flex: 1 1 auto;
+    }
+    .publicidad{
+        background-color: rgb(22, 131, 49);
+        position: relative;
+        width: 20%;
+    }
+.footer{
+    background: #000;
+    display: flex;
+    justify-content: center;
+}
+    .pie{
+        background-color: rgb(149, 101, 29);
+        width: 100%;
+        
+    }
+
+@media all and ( max-width: 800px){
+
+    .section{
+        flex-direction: column;
+    }
+    .menu{
+            flex-direction: column;
+            height: auto;
+        }
+}
+@media all and ( max-width: 600px){
+    .articulos{
+        flex-direction: column;
+    }
+}
