@@ -94,6 +94,7 @@
 
         color: rgba(253, 136, 94, 0.996);
         opacity: 75%;
+        font-family: 'Cormorant Garamond', serif;
     }
 
 .section{
@@ -175,7 +176,7 @@
 
     .article a:hover{
 
-        color: aliceblue;
+        color: rgb(248, 66, 145);
     }
 
 .aside{
@@ -219,6 +220,14 @@
                 flex-direction: column;
                 height: auto;
             }
+        .aside{
+
+            margin-left: 0;
+        }
+        .articulos{
+
+            margin-right: 0;
+        }
            
     }
     @media all and ( max-width: 600px){
@@ -227,12 +236,26 @@
 
             flex-direction: column;
         }
+
+        .nav{
+
+            flex-basis: 53%;
+        }
+
+        
         .menu{
             flex-direction: column;
             height: auto;
         }
         .articulos{
             flex-direction: column;
+        }
+        .logo{
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            
         }
         .logo img{
 
@@ -244,6 +267,15 @@
             
             
         }
+
+        .social{
+
+        height: 40px;
+        display: flex;
+        flex-flow: row;
+        align-items: center;
+        flex-basis: 18%;
+        }
         .off{
             display: none;
         }
@@ -253,6 +285,20 @@
             font-size: larger ;
             opacity: 90%;
             margin: 5px;
+        }
+        .nav{
+
+            display: flex;
+            align-items:center;
+        }
+
+        .articulos{
+
+            margin-right: 0;
+        }
+
+        .aside{
+            margin-left: 0;
         }
 
         
